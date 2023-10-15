@@ -1,3 +1,15 @@
+Initialize a variable roomCount to keep track of the number of rooms. Set it to 0.
+
+Create a boolean 2D array of the same size as the map to mark visited squares. Initialize all elements as false.
+
+Implement a DFS function that starts from a given square (x, y):
+
+If (x, y) is outside the grid boundaries or is a wall (#), return.
+If (x, y) is a floor square (.) and is not visited, mark it as visited.
+Recursively call the DFS function for adjacent squares: up, down, left, and right.
+Iterate through the entire map. When you find an unvisited floor square, increment roomCount and initiate a DFS from that square.
+
+Once you've explored all rooms and marked all connected floor squares as visited, return roomCount.
 #include <iostream>
 #include <vector>
  
